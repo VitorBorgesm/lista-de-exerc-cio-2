@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); 
+        int nota1, nota2, nota3, media;
+        
+        System.out.print("digite a primeira nota(de 0 a 10): ");
+        nota1 = sc.nextInt();
+        System.out.print("digite a segunda nota(de 0 a 10): ");
+        nota2 = sc.nextInt();
+        System.out.print("digite a terceira nota(de 0 a 10): ");
+        nota3 = sc.nextInt();
+        
+       media = (nota1 + nota2 + nota3) / 3; 
+        if (media >=7) {
+            System.out.println("MEDIA DO ALUNO: " + media + " ALUNO APROVADO!!");
+        }
+        else {
+         System.out.println("MEDIA DO ALUNO: " + media + "ALUNO REPROVADO!");
+        }
+      sc.close();
+
+      
+    }
+}
