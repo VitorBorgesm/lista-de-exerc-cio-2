@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); 
+        int numero;
+        
+        System.out.println("escolha um numero: ");
+        numero = sc.nextInt();
+
+        if (numero <= 200 &&  numero >= 100) { 
+            
+            System.out.println("o numero " + numero + " esta entre 100 e 200!");
+        }
+        else {
+            System.out.println("o numero digitado não esta entre 100 e 200!");
+        }
+      sc.close();
+
+      
+    }
+}
