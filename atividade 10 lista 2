@@ -1,0 +1,27 @@
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		 int x, y, z;
+
+	        System.out.println("programa para ver qual numero é maior");
+	        System.out.println("nao digitar numeros repetidos!!!");
+	        System.out.print("Digite o primeiro numero: ");
+	        x = sc.nextInt();
+	        System.out.print("Digite o segundo numero: ");
+	        y = sc.nextInt();
+	        System.out.print("Digite o terceiro numero: ");
+	        z = sc.nextInt();
+
+	        if (x>=y && x>z){
+	          System.out.println("o numero " + x + " é o maior numero!");  
+	        }
+	         if (y>=x && y>z) {
+	          System.out.println("o numero " + y + " é o maior numero!");  
+	        }
+	        else if (z>=x && z>y) { 
+	          System.out.println("o numero " + z + " é o maior numero!");
+	        }
+	        sc.close();
+	    }
+	}
+
