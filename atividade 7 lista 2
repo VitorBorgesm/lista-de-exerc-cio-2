@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); 
+        double x , cent100, cent50, cent25, cent10, cent05, cent01, total;
+        
+        System.out.println("quanto você precisa para compar: ");
+        x = sc.nextDouble();
+
+        System.out.println("numero de moedas de 1 real: ");
+        cent100 = sc.nextDouble();
+
+        System.out.println("numero de moedas de 50 centavos: ");
+        cent50 = sc.nextDouble();
+
+        System.out.println("numero de moedas de 25 centavos: ");
+        cent25 = sc.nextDouble();
+
+        System.out.println("numero de moedas de 10 centavos: ");
+        cent10 = sc.nextDouble();
+
+        System.out.println("numero de moedas de 5 centavos: ");
+        cent05 = sc.nextDouble();
+
+        System.out.println("numero de moedas de 1 centavo: ");
+        cent01 = sc.nextDouble();
+
+        total = (cent100 * 1 + cent50*0.5 + cent25*0.25 + cent10*0.10 + cent05*0.05 +  cent01*0.01);
+
+        if (total >= x) { 
+         System.out.println("Você tem dinheiro suficiente para comprar!! ");   
+        }
+        else 
+        System.out.println("você ainda precisa de mais dinheiro :( ");
+
+        sc.close();
+    }      
+}
