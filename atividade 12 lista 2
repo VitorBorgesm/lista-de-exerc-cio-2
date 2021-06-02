@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class App {
+ public static void main(String[] args) throws Exception {
+   Scanner sc = new Scanner(System.in); 
+   double salario, emprestimo, prestacao, vprestacao, prestm;
+
+    System.out.print("insira o valor do seu salario: ");
+    salario = sc.nextDouble();
+       // essa atividade tive bastante dificuldade pois demorei para me acostumar com o sistema while
+     while (salario<=0) {
+       System.out.println("o valor nao pode ser menor ou igual a 0 " + "digite novamente");
+       salario = sc.nextDouble();
+     }
+     System.out.print("insira o valor do emprestimo: ");
+     emprestimo = sc.nextDouble();
+     while (emprestimo <=0){
+       System.out.println("o valor do emprestimo nao pode ser igual ou menor que 0" + " digite novamente" );
+       emprestimo = sc.nextDouble();
+     }
+     System.out.print("insira o numero de prestações: ");
+     prestacao = sc.nextDouble();
+
+     while (prestacao <=0){
+       System.out.println("o valor nao poder ser menor ou igual a 0" + " Digite novamente");
+       prestacao = sc.nextDouble();
+     }
+     prestm = (salario*0.3);
+     vprestacao = (emprestimo/prestacao);
+
+     if (vprestacao <= prestm){
+       System.out.println("Emprestimo autorizado!");
+     }
+     else
+     System.out.println("emprestimo negado!");
+      sc.close();
+   }      
+}
+
