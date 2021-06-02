@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); 
+        double x, y, resultado, valorF; 
+        
+        System.out.print("escolha um numero: ");
+        x = sc.nextDouble();
+
+        System.out.println("digite o segundo numero: ");
+        y = sc.nextDouble();
+
+        resultado = x + y;
+
+        if (resultado > 20) {
+        valorF = resultado + 8;
+        System.out.println("valor final: " + valorF);
+        }
+        else 
+        valorF = resultado - 5;
+        System.out.println("valor final: " + valorF);
+        sc.close();
+    }      
+}
+
