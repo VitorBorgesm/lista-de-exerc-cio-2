@@ -1,0 +1,27 @@
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class App {
+ public static void main(String[] args) throws Exception {
+   Scanner sc = new Scanner(System.in); 
+   double preco, porcen;
+
+   System.out.print("coloque o preço do produto: ");
+   preco = sc.nextDouble();
+
+   if (preco < 20) {
+     porcen = 45;
+     preco = preco + (preco*porcen)/100;
+     System.out.print("valor total: " + preco);
+
+   }
+   else {
+     porcen = 30; 
+     preco = preco + (preco*porcen)/100;
+     System.out.println("Valor total: " + preco );
+   }
+
+   sc.close();
+   }      
+}
+
