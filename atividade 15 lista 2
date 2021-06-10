@@ -1,0 +1,50 @@
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class App {
+ public static void main(String[] args) throws Exception {
+   Scanner sc = new Scanner(System.in); 
+   double n1, n2, n3, n4, falta1, falta2, falta3, falta4, medianota, totalfalta;
+     // este exercicio eu não consegui formatar direito, vou tentar estudar o porque do meu erro mas não encontrei na internet também agora nas ferias
+     // irei dar uma olhada nele com mais calma para ver se aprendo com o erro
+   System.out.println("insira a nota do primeiro bimestre: ");
+   n1 = sc.nextDouble();
+
+   System.out.println("insira o numero de faltas do primeiro bimestre: ");
+   falta1 = sc.nextDouble();
+
+   System.out.println("insira a nota do segundo bimestre: ");
+   n2 = sc.nextDouble();
+
+   System.out.println("insira o numero de faltas do segundo bimestre: ");
+   falta2 = sc.nextDouble();
+
+   System.out.println("insira a nota do terceiro bimestre: ");
+   n3 = sc.nextDouble();
+
+   System.out.println("insira o numero de faltas do terceiro bimestre: ");
+   falta3 = sc.nextDouble();
+
+   System.out.println("insira a nota do quarto bimestre: ");
+   n4 = sc.nextDouble();
+
+   System.out.println("insira o numero de faltas do quarto bimestre: ");
+   falta4 = sc.nextDouble();
+
+   medianota = (n1+n2+n3+n4)/4;
+   totalfalta = (falta1 + falta2 + falta3 + falta4);
+
+   if (medianota >= 7 && medianota <= 10 && totalfalta <=36) {
+     System.out.println("aprovado!!");
+   }
+   if (medianota >= 4 && medianota <= 7 && totalfalta <=36);{
+    System.out.println("Exame FINAL!");
+   }
+   if (medianota <4 || totalfalta > 36); {
+    System.out.println("Reprovado");
+
+   }
+   sc.close();
+   }      
+}
+
